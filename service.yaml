@@ -5,11 +5,9 @@ metadata:
   namespace: app
 
 spec:
-  type: LoadBalancer
   selector:
     app: k8s-project1
-
   ports:
     - port: 80
       targetPort: 8000
-      protocol: TCP
+  type: LoadBalancer
