@@ -1,6 +1,5 @@
 ---
--name: kubernetes deployment playbook
- hosts: all
+-hosts: all
  become: true
  tasks:
  	-name: create new deployment
